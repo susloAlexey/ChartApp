@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Chart Application">
+    <meta name="author" content="Alexey Suslo">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Chart Application</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/chart.css">
+</head>
+
+<body ng-app="chartApp" ng-cloak>
+
+    <div class="container">
+        <div ng-view></div>
+    </div>
+
+    <!-- Application Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-route.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+
+    <!-- Comment in PROD -->
+    <script src="//localhost:35729/livereload.js"></script>
+
+    <!-- Application Scripts -->
+    <script src="app/app.module.js"></script>
+    <script src="app/app.routes.js"></script>
+    <script src="app/app.config.js"></script>
+    <script src="app/chart/chart.directive.js"></script>
+    <script src="app/main/main.controller.js"></script>
+</body>
+
+</html>

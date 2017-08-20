@@ -1,0 +1,10 @@
+<div>
+    <div class="buttons-container">
+        <button class="btn btn-default" type="button" ng-click="vm.setChartsType('bar')" ng-disabled="vm.chartConfig.type === 'bar'">Bar</button>
+        <button class="btn btn-default" type="button" ng-click="vm.setChartsType('column')" ng-disabled="vm.chartConfig.type === 'column'">Column</button>
+        <button class="btn btn-default" type="button" ng-click="vm.addVisualization()">Add Visualization</button>
+    </div>
+    <div class="charts-container">
+        <div chart-dir chart-config="vm.chartConfig"></div>
+    </div>
+</div>
